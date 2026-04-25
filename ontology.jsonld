@@ -1,0 +1,1635 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#m"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    }, {
+      "@id" : "_:genid18"
+    }, {
+      "@id" : "_:genid16"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid22"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid25"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#f"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid11"
+    }, {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#i"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#d"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#m"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Device and In Vitro Diagnostic Ontology"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the type of field safety corrective action performed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Action Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the type of device affected by a specific risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Affected Device Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a risk class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Class III"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId" : [ {
+    "@value" : "DEV001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName" : [ {
+    "@value" : "HeartMate 3 LVAD"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a device used to validate the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DEV001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a medical device or an in vitro diagnostic device registered in the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/Medical_device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a risk category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device Failure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the type or category of a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-01"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId" : [ {
+    "@value" : "FSCA001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a field safety corrective action used to validate the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the status of a field safety corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA Status"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a corrective action taken in the field in response to a reported incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Field Safety Corrective Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-10"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId" : [ {
+    "@value" : "INC001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-02-12"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of an incident used to validate the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "INC001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IVDRFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the In Vitro Diagnostic Regulation framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IVDR Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a device type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Implantable Active Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents an in vitro diagnostic device regulated under the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "In Vitro Diagnostic Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/In_vitro_diagnostics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a reported incident associated with a device and a risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the type of a reported incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Incident Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country" : [ {
+    "@value" : "Ireland"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId" : [ {
+    "@value" : "MAN001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName" : [ {
+    "@value" : "Abbott Medical"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a manufacturer used to validate the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MAN001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a regulatory framework based on the Medical Device Regulation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MDR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://dbpedia.org/resource/EU_medical_device_regulation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDRFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the Medical Device Regulation framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MDR Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a patient sex category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the organization responsible for manufacturing a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a reporting entity representing a manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer Reporter"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MedicalDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a medical device regulated under the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Medical Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of an FSCA status."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Open"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the outcome experienced by the patient in an incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Patient Outcome"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the sex category associated with a patient involved in an incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Patient Sex"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the probability level associated with a risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Probability Level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode" : [ {
+    "@value" : "IMDRF-001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId" : [ {
+    "@value" : "RISK001"
+  } ],
+  "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName" : [ {
+    "@value" : "Pump malfunction"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a risk used to validate the ontology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RISK001"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of an action type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of a patient outcome."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recovered"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the regulatory framework under which a device is classified."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Regulatory Framework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the entity that reports an incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reporting Entity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a risk identified for a medical device or in vitro diagnostic device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a high-level category used to classify risks."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk Category"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the regulatory risk classification assigned to a device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk Class"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the specific type of a risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Risk Type"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Example instance of an incident type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Serious Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the severity level associated with a risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Severity Level"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date when the field safety corrective action was initiated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "action date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a field safety corrective action to the incident it addresses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "addresses incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to the device affected by it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "affects device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Official authorization number assigned to the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "authorization number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date when the field safety corrective action was closed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "closure date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of the competent authority responsible for the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "competent authority name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contact email address of the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contact email"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean value indicating whether a corrective action was taken."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "corrective action taken"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description of the countries or regions affected by the corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "countries affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Country where the manufacturer is registered."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Country where the incident was reported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "country reported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date when the incident was detected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "detection date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to a risk inferred from an associated incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device associated with risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier assigned to a device instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Human-readable name of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual value indicating the number or extent of affected devices or tests."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "devices affected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reference code assigned to the field safety corrective action in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EUDAMED FSCA reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reference code assigned to the incident in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EUDAMED incident reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Single Registration Number assigned in EUDAMED."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EUDAMED SRN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date when the incident event occurred."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "event date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description of the field safety corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier assigned to a field safety corrective action instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a field safety corrective action to a device through the incident it addresses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FSCA related to device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a field safety corrective action to its action type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has action type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a risk to the type of device it affects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has affected device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to its device type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a field safety corrective action to its status."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has FSCA status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to its incident type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has incident type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to its manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to the patient outcome."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has patient outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to the patient sex category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has patient sex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a risk to its probability level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has probability level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to the associated risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a risk to its risk category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has risk category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to its regulatory risk class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has risk class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to its device type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has device type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a risk to its severity level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has severity level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Official IMDRF code assigned to the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IMDRF code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description of the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incident description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier assigned to an incident instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incident identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to the manufacturer of the affected device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "incident reported for manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description of the intended purpose of the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "intended purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean value indicating whether the device is classified as active."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is active"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean value indicating whether the device is an in vitro diagnostic device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is IVD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean value indicating whether the device is implantable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is implantable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Boolean value indicating whether the device is reusable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is reusable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier assigned to a manufacturer instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufacturer identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Human-readable name of the manufacturer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufacturer name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Age of the patient involved in the incident."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "patient age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a device to the regulatory framework that applies to it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "regulated under"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Date when the incident was reported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "report date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an incident to the reporting entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reported by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description of the risk and its effects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier assigned to a risk instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Human-readable name of the risk."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "risk name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Textual description of the scope of the corrective action."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "scope description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique Device Identification - Device Identifier assigned to the device."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UDI-DI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "urn:swrl:var#d",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#f",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#i",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#m",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

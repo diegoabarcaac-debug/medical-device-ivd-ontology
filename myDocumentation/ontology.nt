@@ -1,0 +1,828 @@
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device and In Vitro Diagnostic Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/terms/license> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to the incident it addresses." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> <http://www.w3.org/2000/01/rdf-schema#label> "addresses incident" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the device affected by it." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> <http://www.w3.org/2000/01/rdf-schema#label> "affects device" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to a risk inferred from an associated incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk> <http://www.w3.org/2000/01/rdf-schema#label> "device associated with risk" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to a device through the incident it addresses." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA related to device" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to its action type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType> <http://www.w3.org/2000/01/rdf-schema#label> "has action type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to the type of device it affects." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasAffectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "has affected device type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its device type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "has device type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a field safety corrective action to its status." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has FSCA status" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to its incident type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "has incident type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its manufacturer." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the patient outcome." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has patient outcome" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the patient sex category." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex> <http://www.w3.org/2000/01/rdf-schema#label> "has patient sex" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its probability level." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has probability level" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the associated risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> <http://www.w3.org/2000/01/rdf-schema#label> "has risk" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its risk category." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "has risk category" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its regulatory risk class." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "has risk class" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to its device type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskType> <http://www.w3.org/2000/01/rdf-schema#label> "has device type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a risk to its severity level." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasSeverityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has severity level" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the manufacturer of the affected device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "incident reported for manufacturer" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a device to the regulatory framework that applies to it." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder> <http://www.w3.org/2000/01/rdf-schema#label> "regulated under" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an incident to the reporting entity." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy> <http://www.w3.org/2000/01/rdf-schema#label> "reported by" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the field safety corrective action was initiated." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate> <http://www.w3.org/2000/01/rdf-schema#label> "action date" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Official authorization number assigned to the manufacturer." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#authorizationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "authorization number" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the field safety corrective action was closed." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#closureDate> <http://www.w3.org/2000/01/rdf-schema#label> "closure date" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the competent authority responsible for the manufacturer." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#competentAuthorityName> <http://www.w3.org/2000/01/rdf-schema#label> "competent authority name" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Contact email address of the manufacturer." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#contactEmail> <http://www.w3.org/2000/01/rdf-schema#label> "contact email" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean value indicating whether a corrective action was taken." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken> <http://www.w3.org/2000/01/rdf-schema#label> "corrective action taken" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the countries or regions affected by the corrective action." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countriesAffectedText> <http://www.w3.org/2000/01/rdf-schema#label> "countries affected" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country where the manufacturer is registered." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country> <http://www.w3.org/2000/01/rdf-schema#label> "country" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported> <http://www.w3.org/2000/01/rdf-schema#comment> "Country where the incident was reported." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#countryReported> <http://www.w3.org/2000/01/rdf-schema#label> "country reported" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was detected." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#detectionDate> <http://www.w3.org/2000/01/rdf-schema#label> "detection date" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier assigned to a device instance." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId> <http://www.w3.org/2000/01/rdf-schema#label> "device identifier" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName> <http://www.w3.org/2000/01/rdf-schema#comment> "Human-readable name of the device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName> <http://www.w3.org/2000/01/rdf-schema#label> "device name" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual value indicating the number or extent of affected devices or tests." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#devicesAffectedText> <http://www.w3.org/2000/01/rdf-schema#label> "devices affected" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference code assigned to the field safety corrective action in EUDAMED." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedFSCARef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED FSCA reference" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference code assigned to the incident in EUDAMED." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedIncidentRef> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED incident reference" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#comment> "Single Registration Number assigned in EUDAMED." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eudamedSRN> <http://www.w3.org/2000/01/rdf-schema#label> "EUDAMED SRN" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident event occurred." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate> <http://www.w3.org/2000/01/rdf-schema#label> "event date" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the field safety corrective action." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaDescription> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA description" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier assigned to a field safety corrective action instance." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA identifier" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Official IMDRF code assigned to the risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode> <http://www.w3.org/2000/01/rdf-schema#label> "IMDRF code" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "incident description" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier assigned to an incident instance." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId> <http://www.w3.org/2000/01/rdf-schema#label> "incident identifier" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the intended purpose of the device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#intendedPurpose> <http://www.w3.org/2000/01/rdf-schema#label> "intended purpose" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean value indicating whether the device is classified as active." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean value indicating whether the device is an in vitro diagnostic device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isIVD> <http://www.w3.org/2000/01/rdf-schema#label> "is IVD" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean value indicating whether the device is implantable." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable> <http://www.w3.org/2000/01/rdf-schema#label> "is implantable" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean value indicating whether the device is reusable." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isReusable> <http://www.w3.org/2000/01/rdf-schema#label> "is reusable" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier assigned to a manufacturer instance." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer identifier" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#comment> "Human-readable name of the manufacturer." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName> <http://www.w3.org/2000/01/rdf-schema#label> "manufacturer name" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Age of the patient involved in the incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#patientAge> <http://www.w3.org/2000/01/rdf-schema#label> "patient age" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when the incident was reported." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate> <http://www.w3.org/2000/01/rdf-schema#label> "report date" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the risk and its effects." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskDescription> <http://www.w3.org/2000/01/rdf-schema#label> "risk description" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier assigned to a risk instance." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId> <http://www.w3.org/2000/01/rdf-schema#label> "risk identifier" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName> <http://www.w3.org/2000/01/rdf-schema#comment> "Human-readable name of the risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName> <http://www.w3.org/2000/01/rdf-schema#label> "risk name" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Textual description of the scope of the corrective action." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#scopeDescription> <http://www.w3.org/2000/01/rdf-schema#label> "scope description" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique Device Identification - Device Identifier assigned to the device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#udiDI> <http://www.w3.org/2000/01/rdf-schema#label> "UDI-DI" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type of field safety corrective action performed." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType> <http://www.w3.org/2000/01/rdf-schema#label> "Action Type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type of device affected by a specific risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#AffectedDeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Affected Device Type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a medical device or an in vitro diagnostic device registered in the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/Medical_device> .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type or category of a device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType> <http://www.w3.org/2000/01/rdf-schema#label> "Device Type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the status of a field safety corrective action." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA Status" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a corrective action taken in the field in response to a reported incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> <http://www.w3.org/2000/01/rdf-schema#label> "Field Safety Corrective Action" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IVDRFramework
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IVDRFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IVDRFramework> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IVDRFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the In Vitro Diagnostic Regulation framework." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IVDRFramework> <http://www.w3.org/2000/01/rdf-schema#label> "IVDR Framework" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents an in vitro diagnostic device regulated under the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#label> "In Vitro Diagnostic Device" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#InVitroDiagnosticDevice> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/In_vitro_diagnostics> .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a reported incident associated with a device and a risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the type of a reported incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "Incident Type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDRFramework
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDRFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDRFramework> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDRFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the Medical Device Regulation framework." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDRFramework> <http://www.w3.org/2000/01/rdf-schema#label> "MDR Framework" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the organization responsible for manufacturing a device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MedicalDevice
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MedicalDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a medical device regulated under the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MedicalDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Medical Device" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the outcome experienced by the patient in an incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Outcome" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the sex category associated with a patient involved in an incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Sex" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the probability level associated with a risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ProbabilityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Probability Level" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the regulatory framework under which a device is classified." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> <http://www.w3.org/2000/01/rdf-schema#label> "Regulatory Framework" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the entity that reports an incident." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Reporting Entity" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a risk identified for a medical device or in vitro diagnostic device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a high-level category used to classify risks." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Category" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the regulatory risk classification assigned to a device." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Class" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the specific type of a risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskType> <http://www.w3.org/2000/01/rdf-schema#label> "Risk Type" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the severity level associated with a risk." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeverityLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Severity Level" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskClass> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a risk class." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII> <http://www.w3.org/2000/01/rdf-schema#label> "Class III" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Device> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasDeviceType> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskClass> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ClassIII> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#regulatedUnder> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceId> "DEV001" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceName> "HeartMate 3 LVAD" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isActive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#isImplantable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a device used to validate the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> <http://www.w3.org/2000/01/rdf-schema#label> "DEV001" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RiskCategory> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a risk category." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure> <http://www.w3.org/2000/01/rdf-schema#label> "Device Failure" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasActionType> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasFSCAStatus> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#actionDate> "2024-03-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaId> "FSCA001" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a field safety corrective action used to validate the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCA001> <http://www.w3.org/2000/01/rdf-schema#label> "FSCA001" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DEV001> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasIncidentType> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientOutcome> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasPatientSex> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportedBy> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#correctiveActionTaken> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#eventDate> "2024-02-10"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentId> "INC001" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#reportDate> "2024-02-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of an incident used to validate the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#INC001> <http://www.w3.org/2000/01/rdf-schema#label> "INC001" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a device type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ImplantableActiveDevice> <http://www.w3.org/2000/01/rdf-schema#label> "Implantable Active Device" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Manufacturer> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#country> "Ireland" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerId> "MAN001" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#manufacturerName> "Abbott Medical" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a manufacturer used to validate the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MAN001> <http://www.w3.org/2000/01/rdf-schema#label> "MAN001" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RegulatoryFramework> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a regulatory framework based on the Medical Device Regulation." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR> <http://www.w3.org/2000/01/rdf-schema#label> "MDR" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#MDR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://dbpedia.org/resource/EU_medical_device_regulation> .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientSex> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a patient sex category." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Male> <http://www.w3.org/2000/01/rdf-schema#label> "Male" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ReportingEntity> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a reporting entity representing a manufacturer." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ManufacturerReporter> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer Reporter" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FSCAStatus> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of an FSCA status." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Open> <http://www.w3.org/2000/01/rdf-schema#label> "Open" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Risk> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRiskCategory> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#DeviceFailure> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#imdrfCode> "IMDRF-001" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskId> "RISK001" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#riskName> "Pump malfunction" .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a risk used to validate the ontology." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#RISK001> <http://www.w3.org/2000/01/rdf-schema#label> "RISK001" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#ActionType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of an action type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recall> <http://www.w3.org/2000/01/rdf-schema#label> "Recall" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#PatientOutcome> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of a patient outcome." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Recovered> <http://www.w3.org/2000/01/rdf-schema#label> "Recovered" .
+# 
+# http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#IncidentType> .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Example instance of an incident type." .
+<http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#SeriousIncident> <http://www.w3.org/2000/01/rdf-schema#label> "Serious Incident" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#d> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid14 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasRisk> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#deviceAssociatedWithRisk> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#FieldSafetyCorrectiveAction> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#i> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#addressesIncident> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#f> .
+_:genid31 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#fscaRelatedToDevice> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid5 <http://www.w3.org/2003/11/swrl#body> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#d> .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid7 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#affectsDevice> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m> .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#d> .
+_:genid9 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#hasManufacturer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
+_:genid11 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid11 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#Incident> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid5 <http://www.w3.org/2003/11/swrl#head> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#m> .
+_:genid13 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#i> .
+_:genid13 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jadie/ontologies/2026/3/medical-device-ivd-ontology#incidentReportedForManufacturer> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
